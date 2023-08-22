@@ -1,0 +1,1779 @@
+body{
+    z-index: -1;
+    line-height: 1.5;
+   overflow-x:hidden ;
+   margin: 0 !important;
+   padding: 0 !important;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.733),rgba(0, 0, 0, 0.733)),url(images/photo-1629540946404-ebe133e99f49.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Quintessential', cursive !important;
+   FONT-SIZE: 19PX !IMPORTANT;
+}
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(212, 205, 205);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: darkgrey;
+}
+/***************** header and navbar**********************/
+.headSection
+{
+    width: 100%;
+    background-image:  linear-gradient(
+        rgba(25, 25, 25, 0.45), rgba(21, 21, 21, 0.733));
+  
+}
+header .navbar-toggler{
+    color: rgb(15, 19, 22);
+    padding-top: 10px;
+}
+
+.logoImage{
+    width: 100px;
+}
+.listNav{
+    z-index: 1;
+    position: fixed !important;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-between !important;
+ 
+}
+.listNav a {
+    color:aliceblue !important;
+}
+.listNav:hover{
+    background-color: aliceblue;
+    transition: background-color 800ms linear;
+}
+
+
+.listNav:hover  a {
+    color: black !important;
+}
+.listNav a:hover{
+    color: rgb(67, 96, 150) !important;
+    cursor: pointer;
+}
+#navbarNav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+.popContent a{
+    color: black !important;
+    text-decoration: none !important;
+}
+.popContent a:hover {
+    color: black !important ;
+    text-decoration: none !important;
+}
+/***************** popovers**********************/
+.bs-popover-top{
+    width: 46% !important;
+    background-color: aliceblue;
+}
+.fade.show{
+    animation: 1s ease-out popOverslideIn;
+}
+@keyframes popOverslideIn {
+    0% {
+        transform: translate(50%,0);
+    }
+    100% {
+        transform: translatey(0 ,50%);
+    }
+}
+
+.popover-body{
+    background-color: aliceblue !important;
+}
+.popover-header{
+    background-color: aliceblue !important;
+    text-align: center;
+}
+.popover {
+    width: 45%;
+    max-width: 100% !important;
+    height: 28rem;
+}
+.popover.row{
+    max-width:100%;
+}.arrow{
+    display: none !important;
+}
+.popover-body{
+    display: grid !important;
+    grid-template-columns: repeat(2,50%);
+}
+.detailColumn{
+    text-align: center;
+    margin-left: 8px;
+}
+.detailColumn div{
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+}
+.detailColumn div:hover{
+    background-color:rgb(211, 211, 211);
+    padding: 5px 0;
+    transition:background-color 700ms linear;
+}
+.detailColumn div a{
+    color: black !important;
+}
+.detailColumn div a:hover{
+    text-decoration: none;
+}
+/***************** our company**********************/
+.companyImg{
+width: 100%;
+}
+/***************** map **********************/
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:100%;
+}
+.mapouter{position:relative;
+    text-align:right;
+    height:400px;
+    width:100%;}
+/***************** form**********************/
+.infoForm .infoInput , .message{
+    width: 100%;
+    height: 35px;
+    border: 1px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    padding: 16px;;
+
+}
+.message{
+    height: 100px;
+    border-radius: .3rem;
+}
+ .infoColumn{
+     margin-left: 12px;
+ }
+ .send , .More{
+    width: 100%;
+    height: 35px;
+    background-color: #c56763;
+    border: 1px solid #c56763;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+ }
+ .More{
+    background-color: #633534;
+    border: 1px solid #633534;
+   margin-top: 10px;
+ }
+ .More:hover{
+    background-color: #8a5251;
+    border: 1px solid #8a5251;
+    transform: scale(1.04);
+    transition:0.5s ease-in-out;
+ 
+ }
+ .send:hover{
+    background-color: #dd7673;
+    border: 1px solid #dd7673;
+    transform: scale(1.04);
+    transition:0.5s ease-in-out;
+ }
+/***************** slider**********************/
+.slider img{
+    width: 100%;
+    height:35rem !important;
+    filter: brightness(0.5);
+}
+.carousel-indicators li {
+    width: 8px !important;
+    height:8px !important;
+    border-radius: 50%;
+}
+.carousel-caption{
+    top:40% !important;
+    width: 40%;
+    left: 30% !important;    
+    right: 40% !important;
+}
+/***************** animation on caption**********************/
+.carousel-caption h3{
+    animation: 1s ease-out 2ms 1 slideInFromBottom;
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translatey(-200%);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+    
+
+.carousel-caption p{
+    animation: 1s ease-out 2ms 1 slideInFromTop;
+}
+@keyframes slideInFromTop {
+    0% {
+        transform: translatey(200%);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+/***************** activities section**********************/
+.activities , .news ,.lastProjects  {
+    padding-top: 4% !important;
+    background-color: rgb(215, 213, 213);
+}
+.activities .div1 img , .activities .div2 img,.activities .div3 img,.activities .div4 img{
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.activities .div2 img{
+    height: 92%;
+}
+.activities .div3 img:first-child{
+    width: 70%;
+    height: 47%;
+}
+.activities .div4 img:first-child{
+    margin-left: -66px;
+    width: 126%;
+    height: 47%;
+}
+.activities{
+    padding: 4%;
+}
+.activities h3 , .activities p ,.news h3 , .news p ,.lastProjects h3 , .lastProjects p ,
+.certificates h3 , .certificates p{
+    text-align: center;
+}
+
+.activities img{
+    position: relative;
+    filter: brightness(0.2);
+    transition: 1s ease-in-out;
+}
+.activities h4{
+    position: absolute;
+    color: white;
+    top: 20%;
+    right: 22%;
+}
+.activities img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+.activities .heading2{
+    top: 65%;
+    right: 15%;
+}
+.activities .div3 .civil , .activities .div4 .pipe{
+    right: 40%;
+}
+
+ .activities .div2 h4{
+     top: 48%;
+
+}
+/*****************latest news**********************/
+.news{
+    padding: 2%;
+   
+}
+.news .card {
+    overflow: hidden;
+}
+.news img {
+    cursor:pointer;
+    height: 58%;
+   filter: brightness(0.2);
+   transition: 1s ease-in-out;
+}
+
+.news img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  filter: brightness(1);
+ 
+}
+
+.news .card{
+    height: 320px !important;
+}
+/*****************info**********************/
+.infoSec{
+    background-color: transparent !important;
+    width: 50% !important;
+    text-align: center;
+    margin:70px auto 20px auto;
+    padding: 10px;
+    color: aliceblue;
+    height: 400px;
+    line-height: 2;
+    font-size: 20px;
+}
+.infoSec h3{
+    margin-bottom: 20px;
+}
+.readMore{
+    background-color: rgb(158, 39, 39);
+    width: 120px;
+    height: 44px;
+    border: 1px solid rgb(158, 39, 39);
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 17px;
+}
+.readMore:hover{
+    background-color: rgb(139, 30, 30);
+    border: 1px solid rgb(139, 30, 30);
+    transform: scale(1.1);
+    transition:0.5s ease-in-out;
+    
+}
+/*****************latest projects**********************/
+.lastProjects .card img{
+    height: 200px;
+}
+.lastProjects .card .card-body p{
+    margin-left: 4px;
+    display: inline-block !important;
+    text-align: justify;
+}
+.lastProjects .card .card-body span{
+    font-weight: 500;
+}
+/*****************Our PARENTERS **********************/
+.parenters {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 4% !important;
+}
+.logos{
+    width:100%;
+    text-align: center;
+    background-color:white;
+  }
+  .logosDiv{
+    margin: 2% auto;
+    display: flex;
+    width: 70%;
+  }
+  .logosDiv div{
+      display: inline-block;
+  }
+
+ .logosDiv img{
+     width: 70%;
+     border-radius: 50%;
+     filter: grayscale(1);
+     transition: filter 800ms linear;
+ }
+ .logosDiv img:hover{
+     filter: unset;
+     cursor: pointer;
+     transform: scale(1.1);
+     transition: 0.7s ease-in-out;
+ }
+/*****************Our certificates **********************/
+.certificates{
+    justify-content: center;
+    
+}
+.certificates {
+    padding: 4%;
+    color: aliceblue;
+    
+}
+.certificates .carousel img{
+    height: 400px;
+    margin: 0 auto;
+}
+.certificates .carousel-control-prev {
+    left: 12% !important;
+}
+.certificates .carousel-control-next{
+    right: 12% !important;
+}
+
+/*****************footer **********************/
+footer{
+    clear: both;
+    position: relative;
+    background-color: #383838c2;
+    width: 100%;
+   
+}
+.footer{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: aliceblue;
+}
+.footer h4{
+    display: inline-block;
+}
+.footer .logoImg{
+    width: 20%;
+    margin-top: -2%;
+
+}
+.spans{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.products{
+    list-style-type: none;
+    display: inline-block;
+    width: 70%;
+}
+.products li{
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.products a{
+    text-decoration: none;
+    color: #ce8d8d !important;
+}
+.products a:hover{
+    text-decoration: none;
+    color: #ae6666 !important;
+}
+
+
+.spans .span1 , .spans .span2 ,.spans .span3 ,.spans .span4{
+    padding: 10px 14px;
+    background-color: black;
+    border-radius: 50%;
+    height: 41px;
+}
+
+.spans .span1:hover ,.spans .span2:hover , .spans .span3:hover,.spans .span4:hover{
+    background-color: #ae6666;
+    cursor: pointer;
+}
+.top{
+    position: absolute;
+    right: 2%;
+    width: 60px;
+    top: 84%;
+    height: 41px;
+    background-color: #cb7979;
+    border-radius: 2%;
+    border: 1px solid #cb7979;
+}
+.top:hover{
+    background-color:#cc6d6d;
+    border: 1px solid #cc6d6d;
+    cursor: pointer;
+}
+.copyRight{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+
+footer .footContact{
+    margin: 0 auto;
+}
+footer .footContact p {
+display: inline-block;
+}
+footer .footContact label{
+    color:#cc6d6d ;
+}
+footer .paragraph{
+    line-height: 2.5;
+}
+
+/*****************About Us page , projects page**********************/
+.aboutDiv ,.ProjectsDiv{
+    background-color: rgb(242, 242, 242);;
+    color: black;
+}
+
+.aboutList ,.ProjectsList , .servicesList ,.exhibtionList{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10% !important;
+    width:100%;
+    background-color: aliceblue;
+    color: black;
+    height: 320px;
+    padding:0;
+
+
+}
+
+.aboutList li ,.ProjectsList li ,.servicesList li ,.exhibtionList li{
+    padding: 14px;
+    border-radius: 3px;
+   text-align: center;
+}
+.aboutList  .active , .ProjectsList .active , .servicesList .active ,.exhibtionList .active{
+    background-color: #a42f2f !important;
+    color: aliceblue;
+}
+.aboutList li:hover , .ProjectsList li:hover , .servicesList li:hover ,.exhibtionList li:hover{
+    background-color: #a42f2f;
+    color: aliceblue;
+    cursor: pointer;
+}
+.aboutDiv .row {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*****************profile Div **********************/
+.profileContent{
+    margin-top:3% !important;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+
+}
+.title{
+    margin-bottom: 40px;
+}
+.profileContent h3 , .strategyContent h3 , .certificateContent h3 ,
+ .parenterContent h3 ,.historyContent h3 , .projectsContent h3 ,.proDetails h3, #contentplants h3
+ ,.PipelinesContent h3 ,.FramsContent h3 ,.structureContent h3 ,.processContent h3 ,.coatingContent h3
+ ,.WorkshopContent h3 ,.PipeCoatingContent h3 ,.MaintenanceContent h3 ,.newsContent h3 ,
+ .ExhibitionsContent h3  ,.ExhibitionsContent h3{
+    font-family: 'Tangerine', cursive;
+    position: relative;
+}
+
+.profileContent .title::after, .strategyContent .title::after ,.certificateContent .title::after 
+,.parenterContent .title::after ,.historyContent .title::after , .projectsContent .title::after
+,.proDetails .title::after, #contentplants .title::after,.PipelinesContent .title::after
+,.FramsContent .title::after ,.structureContent .title::after ,.processContent .title::after
+,.coatingContent .title::after ,.WorkshopContent .title::after ,.PipeCoatingContent .title::after
+,.MaintenanceContent .title::after,.newsContent .title::after , 
+.ExhibitionsContent .title::after,.ExhibitionsContent .title::after{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 5%;
+    width: 75px;
+    height: 4px;
+    background: #e1313f;
+    transform: translateX(-50%);
+}
+.structureContent .title::after ,.processContent .title::after
+,.coatingContent .title::after{
+    bottom: -20px !important;
+    left: 40% !important;
+    width: 167px !important;
+}
+.strategyContent .title::after , .certificateContent .title::after ,.parenterContent .title::after{
+    bottom: -20px;
+    left: 6%;
+    width: 84px;
+}
+.aboutMain .achieveImgs img ,.projectsMain .ProjectImgs img{
+    width: 100%;
+    height: 300px;
+}
+.aboutMain .achieveImgs .col-4 ,.projectsMain .ProjectImgs .col-4{
+padding: 0 !important;
+}
+.aboutMain .achieveImgs ,.projectsMain .ProjectImgs {
+    height: 600px;
+  
+}
+
+/*****************strategy div**********************/
+.strategy img{
+    width: 100%;
+    
+}
+.strategyContent h3 , .certificateContent h3{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.strategyContent h5{
+    color: rgb(202, 160, 106);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.strategyContent , .strategy{
+    display: none;
+}
+
+
+/*****************certificate div**********************/
+.certificate img{
+    width: 100%;
+    height: 650px;
+
+}
+.certificateContent .row ,.parenterContent .row{
+    width: 100%;
+}
+.certificateContent img , .parenterContent img{
+    width: 100%;
+}
+.certificateContent img:hover , .parenterContent img:hover{
+    cursor: pointer;
+}
+.certificateContent .modal h3 ,.parenterContent .modal h3{
+    margin: 0 !important;
+}
+.certificate , .certificateContent {
+    display: none;
+}
+
+/*****************parenter div**********************/
+.parenter , .parenterContent{
+    display: none;
+}
+
+/*****************history div**********************/
+.history .row img{
+    padding:0 !important;
+    height: 300px;
+}
+.history .img1{
+    filter: grayscale(1);
+}
+.history .img3{
+    filter: sepia(1);
+}
+.history .img4{
+    filter: saturate(0.5);
+}
+.history .img5{
+    filter: grayscale(2);
+}
+.history .img6{
+    filter: brightness(0.5);
+}
+.history{
+    position: relative;
+}
+.history h5{
+    position: absolute;
+    top: 50%;
+    color: aliceblue;
+    left: 42%;
+    font-size: 30px;
+    transform: rotate(-24deg);
+    font-family: 'Tangerine', cursive;
+}
+.historyContent .row{
+    width: 100% !important;
+    margin-bottom: 10px;
+}
+.historyContent .row img{
+    filter: grayscale(1);
+}
+.historyContent h3{
+    margin-top: 30px;
+}
+.historyContent , .history{
+    display: none;
+}
+
+.history .img5{
+    WIDTH: 448PX;
+}
+.history .img7 , .history .img3{
+    width: 419px;
+}
+
+/*****************project page**********************/
+#contentplants,.Plants ,#contentPipelines,.PIPELINES,#contentFrams,.FARMS
+,#contentstructure,.STRUCTURES ,#contentprocess,.EQUIPMENT , #contentcoating,.COATING{
+    display: none;
+}
+
+/*****************all projects**********************/
+.ProjectsDiv .row {
+    width: 90%;
+    margin:  0 auto;
+}
+
+.projectsContent .row, #contentplants .row ,.PipelinesContent .row  ,.FramsContent .row ,
+.structureContent .row ,.processContent .row ,.coatingContent .row {
+    
+    width: 100% !important;
+    margin: 0 auto !important;
+    justify-content: space-around;
+}
+.projectsContent .title , #contentplants .title ,.PipelinesContent .title , .FramsContent .title 
+,.structureContent .title,.processContent .title ,.coatingContent .title,.WorkshopContent .title,
+.PipeCoatingContent .title
+,.MaintenanceContent .title {
+    margin-top: 40px;
+}
+.projectsContent .title::after , #contentplants .title::after ,.PipelinesContent .title::after , 
+.FramsContent .title::after ,.structureContent .title::after ,.WorkshopContent .title::after ,.PipeCoatingContent .title::after
+,.MaintenanceContent .title::after ,.newsContent .title::after , 
+.ExhibitionsContent .title::after{
+    left: 44%;
+    width: 110px;
+}
+
+.projectsContent h3, #contentplants h3 ,.PipelinesContent h3 , .FramsContent h3 ,.structureContent h3,
+.processContent h3 ,.coatingContent h3 ,.newsContent h3 ,.ExhibitionsContent h3{
+    text-align: center;
+}
+.projectsContent .card  , #contentplants .card ,.PipelinesContent .card ,.FramsContent .card ,
+.structureContent .card ,.processContent .card ,.coatingContent .card ,.newsContent .card ,.ExhibitionsContent .card{ 
+    padding: 0 !important;
+}
+.projectsContent a.readMore , #contentplants a.readMore ,.PipelinesContent a.readMore ,
+ .FramsContent a.readMore , .structureContent a.readMore ,.processContent a.readMore ,
+ .coatingContent a.readMore ,.newsContent a.readMore ,.ExhibitionsContent a.readMore{ 
+    text-decoration: none;
+    color: brown;
+    background-color: transparent;
+    border: 0;
+   font-size: 20px;
+}
+.projectsContent a.readMore:hover , #contentplants a.readMore:hover ,.PipelinesContent a.readMore:hover
+,.FramsContent a.readMore:hover ,.structureContent a.readMore:hover ,.processContent a.readMore:hover,
+.coatingContent a.readMore:hover,.newsContent a.readMore:hover ,.ExhibitionsContent a.readMore:hover{
+    color: rgb(201, 83, 83);
+}
+.ProjectsDiv .col-4  {
+    flex: 0 0 28.333333% !important;
+    max-width: 28.333333% !important;
+}
+.ProjectsDiv .col-8{
+    flex: 0 0 71.666666% !important;
+    max-width: 71.666666% !important;
+}
+.ProjectsList{
+    height: 400px;
+}
+.ProjectsDiv .card p , #contentplants .card p ,.PipelinesContent .card p ,.FramsContent .card p 
+,.structureContent .card p ,.processContent .card p,.coatingContent .card p{
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 100;
+}
+.ProjectsDiv .card2 img , .ProjectsDiv .card4 img {
+    width: 100%;
+    height: 226px; 
+}
+.ProjectsDiv .card img:hover ,.ProjectsDiv .card a:hover , #contentplants .card a:hover,
+ #contentplants .card img:hover ,.structureContent .card img:hover ,.structureContent .card a:hover
+ ,.processContent .card img:hover ,.coatingContent .card img:hover,.processContent .card a:hover ,
+ .coatingContent .card a:hover,.newsContent .card img:hover,.newsContent .card a:hover
+ ,.ExhibitionsContent .card a:hover ,.ExhibitionsContent img:hover{
+    cursor: pointer;
+}
+
+/*****************project details**********************/
+.detailsMain img{
+    width: 100%;
+    height: 500px;
+}
+.proDetails{
+    background-color: rgb(242, 242, 242);
+    padding: 20px !important;
+}
+.proDetails h3{
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+
+}
+.proDetails .title::after{
+    left: 40px;
+}
+.proDetails .row {
+    width: 60%;
+    margin: 0 auto;
+  
+}
+.proDetails .row img{
+    height: 280px;
+    margin-top: 17%;
+}
+.proDetails p{
+    text-align: justify;
+}
+.proDetails table{
+    margin-top: 4%;
+    margin-bottom:5% ;
+}
+/*****************PROCESS PLANTS**********************/
+ .card img{
+    
+    width: 100%;
+
+}
+#contentplants .card ,.FramsContent .card,.structureContent .card ,.processContent .card  ,
+.coatingContent .card {
+    height:  450px;
+}
+.newsContent .card  ,.ExhibitionsContent .card{
+    height:  380px;
+}
+#contentplants h3 ,.structureContent h3 ,#workShopLi h3 ,#pipeCoatLi h3 ,#maintainanceLi h3
+,.newsContent h3 ,.ExhibitionsContent h3{
+    margin-top: 7%;
+}
+.Plants img ,.FARMS img ,.PIPELINES img ,.STRUCTURES img ,.EQUIPMENT img ,.COATING img ,.workShopImg img ,
+.pipeCoatImg img ,.MaintenanceImg img ,.newsImg img ,.ExhibitionsImg img{
+    height: 500px;
+    width: 100%;
+}
+.coatingContent .title::after {
+    left: 48% !important;
+}
+
+
+/***************** services**********************/
+
+#contentPipeCoat,.pipeCoatImg,#contentMaintenance,.MaintenanceImg ,.ExhibitionsImg ,.PublicationsContent , .ExhibitionsContent{
+    display: none;
+}
+.servicesMain ,.exhibtionMain{
+    background-color: rgb(242, 242, 242);
+}
+.WorkshopContent .title::after ,.PipeCoatingContent .title::after, .MaintenanceContent .title::after{
+    left: 7%;
+}
+.exhibtionMain .title::after {
+    left: 48%;
+    width: 55px;
+}
+.servicesDiv .row {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10% ;
+
+}
+/***************** pipe coating**********************/
+
+.PipeCoatingContent .row ,.exhibtionMain .row{
+    width: 90% !important;
+    margin: 0 auto;
+   
+}
+.PipeCoatingContent .row img{
+    width: 95%;
+    height: 130px;
+}
+
+.PipeCoatingContent p ,.MaintenanceContent p{
+    font-size: 20px;
+}
+/***************** exhibtion**********************/
+
+.exhibtionMain .row {
+    justify-content: space-around;
+}
+.exhibtionMain .row{
+    padding-bottom: 5%;
+}
+.newsContent .card img ,.ExhibitionsContent .card img ,.plantsContent  .card img ,.PipelinesContent .card img
+,.FramsContent  .card img  ,.projectsContent .card img {
+    height: 200px;
+
+}
+.structureContent  .card img ,.processContent .card img ,.coatingContent  .card img{
+    height: 240px;
+}
+/***************** in arabic**********************/
+.rightlastProjects .card{
+    height: 400px;
+}
+.rightlastProjects .card .card-text{
+    display: inline-block;
+}
+footer .inarabic{
+    text-align: right;
+}
+footer .footContact{
+   text-align: center;
+    
+}
+footer .top{
+    width: 100px;
+    top: 70%;
+    padding-bottom: 35px;
+    padding-top: 16px;
+    border-radius: 7px;
+
+}
+.language{
+    text-align: right;
+}
+.arabicPage .carousel .carousel-caption{
+    left: 21% !important;
+    right: 29% !important;
+}
+.arabicPage .activities .div3 .civil{
+    right: 5%;
+}
+.arabicPage .activities .div3 {
+    text-align: right;
+}
+.arabicPage .activities .div4 img:first-child {
+    margin-right: -80px;
+    margin-left: 0 !important;
+    width: 126%;
+    height: 47%;
+}
+.arabicPage .activities .div4 .pipe {
+    right: 22%;
+}
+.arabicPage .activities .heading2 {
+    top: 69%;
+    right: 26%;
+} 
+
+.arabicPage ,.mainSlider{
+padding: 0;
+margin: 0;
+}
+.arabicPage .activities .row {
+    margin-right: 0 !important; 
+     margin-left: 0 !important; 
+}
+.arabicPage .rightlastProjects{
+    padding-top: 4% !important;
+    background-color: rgb(215, 213, 213);
+}
+.arabicPage .rightlastProjects h3{
+    text-align: center;
+}
+.arabicAboutMain .historyContent h3 {
+    text-align: right;
+}
+.arabicAboutMain .profileContent .title::after,.arabicAboutMain .strategyContent .title::after,
+.arabicAboutMain .certificateContent .title::after, .arabicAboutMain .parenterContent .title::after,
+.arabicAboutMain .historyContent .title::after,.arabicProjects .projectsContent .title::after, 
+.arabicAboutMain .proDetails .title::after,.arabicProjects  #contentplants .title::after,
+.arabicProjects .PipelinesContent .title::after,.arabicProjects .FramsContent .title::after, 
+.arabicProjects .structureContent .title::after,.arabicProjectsn .processContent .title::after,
+.arabicProjects .coatingContent .title::after,.arabicServices .WorkshopContent .title::after,
+.arabicServices  .PipeCoatingContent .title::after,.arabicServices .MaintenanceContent .title::after, 
+.arabicNews  .newsContent .title::after,.arabicNews .ExhibitionsContent .title::after, 
+.arabicNews  .ExhibitionsContent .title::after{
+
+    left: 0;
+    right: -7%;
+}
+.arabicAboutMain .profileContent h3,.arabicAboutMain .strategyContent h3,
+.arabicAboutMain .certificateContent h3, .arabicAboutMain .parenterContent h3,
+.arabicAboutMain .historyContent h3,.arabicProjects .projectsContent h3, 
+.arabicAboutMain .proDetails h3,.arabicProjects  #contentplants h3,
+.arabicProjects .PipelinesContent h3,.arabicProjects .FramsContent h3, 
+.arabicProjects .structureContent h3,.arabicProjects .processContent h3,.arabicServices  h3, 
+.arabicNews  .newsContent h3,.arabicNews .ExhibitionsContent h3, 
+.arabicNews  .ExhibitionsContent  h3{
+    text-align: right;
+}
+.arabicAboutMain .strategyContent h5 ,.arabicAboutMain .strategyContent p ,
+.arabicAboutMain .strategyContent li ,.arabicNews  li ,.arabicServices li , .arabicServices p{
+    text-align: right;
+}
+.historyContent .row img {
+    width: 100%;
+}
+.historyContent .row {
+    margin-top:5%;
+}
+.arabicProjects .card-body{
+    text-align: right;
+}
+.language a:hover{
+    text-decoration: none;
+}
+.englishHEad #navList .language{
+    text-align: left !important;
+}
+.arlang , .enlang{
+display: none
+}
+.activeLang{
+    display: inline-block;
+}
+.btn-outline-success {
+    color: #eaacce;
+    background-color: transparent;
+    background-image: none;
+    border-color: #eaacce;
+}
+    .btn-outline-success:hover {
+        color: #fff;
+        background-color: #804b7a;
+        border-color: #804b7a;
+    }
+
+.ul2, .hf {
+    margin-top: 5%;
+}
+    .ul2 li {
+        font-size: 130%;
+        color: black;
+    }
+ol {
+    list-style-type: none;
+}
+a {
+    color:  rgb(201, 83, 83);
+}
+    a:hover {
+        color: brown;
+    }
+
+.contact li {
+    font-size: 120%;
+    list-style-type: none;
+    color: aliceblue;
+}
+.contactsection .infoInput{
+    width: 100%;
+    padding: 10px;
+    border-radius: 0.3rem;
+    margin-bottom: 15px;
+    border: transparent;
+}
+.contactsection .row{
+    margin: 30px 0;
+}
+
+
+.OLTeam li {
+    display: inline-block;
+}
+
+    .OLTeam li a {
+        color: #B499AF;
+    }
+.social {
+   font-size:200%;
+}
+ h5{
+    color:black;
+}
+.card {
+    background-color: #B499AF;
+}
+.iconcard {
+    color: black;
+    text-align: center;
+}
+.iconcard div.card{
+    padding-top: 20px !important;
+}
+.iconcard div.col-4{
+    width: 7rem;
+}
+.iconcard .row{
+    width: 70%;
+    margin:40px auto;
+}
+.iconcard a{
+    color:black;
+}
+.iconcard i{
+   font-size:150%;
+}
+.contactsection{
+    color: aliceblue;
+}
+#contact{
+    margin-top: 10%;
+}
+.contactsection .spans .span1, .contactsection .spans .span2, .contactsection .spans .span3,
+.contactsection .spans .span4 {
+    padding: 6px 12px;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.contactsection  .spans .span1:hover ,.contactsection  .spans .span2:hover , 
+.contactsection  .spans .span3:hover,.contactsection  .spans .span4:hover{
+    background-color: #ae6666;
+    cursor: pointer;
+}
+.contactContain .row{
+    width: 75%;
+    margin: 0 auto;
+     margin-top: 43px;
+}
+.contactsection form h5{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ArabicContactBody .contactsection{
+    text-align:  right;
+}
+ html.dark-theme:hover{
+    cursor: pointer !important;
+}
+#gmap_canvas{
+        height: 400px;
+        width: 100%;
+}
+@media (min-width: 767px) and (max-width: 992px) {
+    h4 {
+        font-size: 1.2rem !important;
+    }
+    .infoSec{
+        width: 70% !important;
+    }
+    .activities .heading2 {
+        top: 70%;
+        right: 11%;
+    }
+    .listNav .col-6{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .englishHEad #navList .language {
+        margin-right: -65% !important;
+    }
+    .news .col-3 ,.lastProjects .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .lastProjects .card{
+        height: 420px;
+    }
+    .footer .top {
+        top: 85%;
+    }
+    .activities h4 {
+        right: 18%;
+    }
+    .activities .div3 .civil, .activities .div4 .pipe {
+        right: 36%;
+    }
+    .projectsContent .col-5,.newsContent .col-5 ,.ExhibitionsContent .col-5 ,.FramsContent .col-5,
+    .PipelinesContent .col-5
+    {
+        flex: 0 0 70% !important;
+        max-width: 70% !important;
+    }
+    .card img {
+        height: 180px !important;
+        width: 100%;
+    }
+    .PipeCoatingContent .row, .exhibtionMain .row {
+        width: 98% !important;
+    }
+    .ExhibitionsContent .card img {
+        width: 100%;
+        height: 151px;
+    }
+    .aboutList, .ProjectsList, .servicesList, .exhibtionList {
+        margin-top: 20% !important;
+    }
+    .PipeCoatingContent .col-4{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .popover-body{
+        display: block !important;
+      
+    }
+    #contentplants .card, .FramsContent .card, .structureContent .card, .processContent .card, .coatingContent .card {
+        height: 400px !important;
+    }
+    
+}
+@media (min-width: 577px) and (max-width: 768px)
+ {
+    .infoSec{
+        width: 80% !important;
+    }
+    .listNav .col-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .listNav .col-md-3 {
+       
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .bs-popover-top{
+        will-change: transform;
+        position: absolute;
+        transform: translate3d(130px, 5px, 0px);
+        left: -244px !important;
+        width: 50% !important;
+       
+    }
+    .popover-body{
+        display: block !important;
+      
+    }
+    .englishHEad #navList .language {
+        margin-right: -55% !important;
+    }
+    h4 {
+        font-size: 1rem !important;
+    }
+    .proDetails .row {
+        width: 100%;
+        margin: 0 auto;
+      
+    }
+    .proDetails .row img{
+        height: 260px;
+        margin-top: 17%;
+    }
+    .projectsContent .col-5,.newsContent .col-5 ,.ExhibitionsContent .col-5 ,.FramsContent .col-5,
+    .PipelinesContent .col-5 ,.plantsContent .col-5 ,.structureContent .col-5 ,.coatingContent .col-5 ,.processContent  .col-5
+    {
+        flex: 0 0 80% !important;
+        max-width: 80% !important;
+    }
+    .card img {
+        height: 180px !important;
+        width: 100%;
+    }
+    .news .col-3 ,.lastProjects .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .lastProjects .card{
+        height: 420px;
+    }
+    .ProjectsDiv .col-8{
+        flex: 0 0 60.666666% !important;
+        max-width: 60.666666% !important;
+    }
+    .ProjectsDiv .col-4 {
+        flex: 0 0 38.333333% !important;
+        max-width: 38.333333% !important;
+    
+    }
+.ProjectsDiv .row{
+    width: 100% !important;
+}    
+.ProjectsDiv  .prolist{
+    margin-top: 30px;
+}
+#contentplants .card, .FramsContent .card, .structureContent .card, .processContent .card, .coatingContent .card {
+    height: 340px !important;
+}
+.bs-popover-top{
+    transform: translate3d(260px, 104px, 0px) !important;
+    width: 50% !important;
+    left: -130px !important;
+    background-color: aliceblue;
+   
+}
+.contactContain .row {
+    width: 100% !important;
+}
+.iconcard .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.iconcard div.col-4 {
+    width: 80% !important;
+    margin-bottom: 20px auto;
+}
+.footer .logoImg {
+    width: 55%;
+  
+}
+footer .top {
+    top: 90%;
+}
+footer .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+}
+
+
+
+@media (min-width: 431px) and (max-width: 576px)
+{
+    .bs-popover-top{
+        transform: translate3d(200px, 5px, 0px) !important;
+    }
+    .listNav .col-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .navbar-toggler{
+        left: -20px !important;
+       
+    }
+    .proDetails .row {
+        width: 100%;
+        margin: 0 auto;
+      
+    }
+    .proDetails .row img{
+        height: 260px;
+        margin-top: 17%;
+    }
+    .contactContain .row {
+        width: 100% !important;
+    }
+    .popover-body{
+        display: block !important;
+      
+    }
+    h4 {
+        font-size: 1rem !important;
+    }
+    .carousel-caption{
+        top:40% !important;
+        width: 80%;
+        left: 8% !important;    
+    
+    }
+    .englishHEad #navList .language {
+        margin-right: -30% !important;
+    }
+    .activities .col-3{
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+    .projectsContent .col-5,.newsContent .col-5 ,.ExhibitionsContent .col-5 ,.FramsContent .col-5,
+    .PipelinesContent .col-5 ,.plantsContent .col-5 ,.structureContent .col-5 ,.coatingContent .col-5 ,.processContent  .col-5
+    {
+        flex: 0 0 80% !important;
+        max-width: 80% !important;
+    }
+    .card img {
+        height: 180px !important;
+        width: 100%;
+    }
+    .news .col-3 ,.lastProjects .col-3{
+        margin: 0 auto;
+        flex: 0 0 80%;
+        max-width: 100%;
+    }
+    .lastProjects .card{
+        height: 420px;
+    }
+    .lastProjects .card-body{
+        padding: 0rem; 
+        margin-top: 1rem;
+    }
+    .lastProjects .card-body span{
+        color:rgb(37, 37, 111);
+        font-size: 22px;
+        font-weight: bold;
+
+    }
+    .parenters h3 ,.certificates h3{
+        margin-top: 2rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .logosDiv {
+        width: 90% !important;
+    }
+    .certificates .carousel-control-next {
+        right: -10% !important;
+    }
+    .certificates .carousel-inner {
+        width: 90% !important; 
+        margin: 0 auto !important;
+    }
+
+    .certificates .carousel img {
+        height: 260px !important;
+    }
+.slider img {
+    width: 100%;
+    height: 30rem !important;
+}
+.certificates .carousel-control-prev {
+    left: -10% !important;
+}
+    .ProjectsDiv .col-8{
+        flex: 0 0 60.666666% !important;
+        max-width: 60.666666% !important;
+    }
+    .ProjectsDiv .col-4 {
+        flex: 0 0 38.333333% !important;
+        max-width: 38.333333% !important;
+    
+    }
+.ProjectsDiv .row{
+    width: 100% !important;
+}    
+.ProjectsDiv  .prolist{
+    margin-top: 30px;
+}
+#contentplants .card, .FramsContent .card, .structureContent .card, .processContent .card, .coatingContent .card {
+    height: 340px !important;
+}
+.bs-popover-top{
+    width: 80% !important;
+    left: -180px !important;
+}
+.iconcard .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.iconcard div.col-4 {
+    width: 80% !important;
+    margin-bottom: 20px auto;
+}
+.footer .logoImg {
+    width: 55%;
+}
+footer .top {
+    top: 90%;
+}
+footer .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+.parenter  img{
+    width: 100% !important;
+}
+.aboutMain .achieveImgs img, .projectsMain .ProjectImgs img {
+    height: 167px;
+}
+.parenterContent {
+    margin-top: 10%;
+}
+.strategyContent .title::after, .certificateContent .title::after, .parenterContent .title::after {
+    left: 22%;
+}
+
+.aboutDiv .row {
+    width: 100% !important;
+  
+}
+.PipeCoatingContent .row, .exhibtionMain .row {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.servicesDiv .row {
+    width: 100%;
+}
+.WorkshopContent .title::after, .PipeCoatingContent .title::after, .MaintenanceContent .title::after {
+    left: 27%;
+}
+.PipeCoatingContent  .col-4{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.aboutList, .ProjectsList, .servicesList, .exhibtionList {
+    margin-top: 30% !important;
+}
+.aboutMain .achieveImgs, .projectsMain .ProjectImgs {
+    height: 335px;
+}
+.proDetails .row img {
+    height: 240px;
+    margin-top: 0%;
+}
+.Plants img, .FARMS img, .PIPELINES img, .STRUCTURES img, .EQUIPMENT img, .COATING img,
+ .workShopImg img, .pipeCoatImg img, .MaintenanceImg img, .newsImg img, .ExhibitionsImg img {
+    height: 320px;
+}
+.historyContent .col-6 , .proDetails  .col-6{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+.history .row img {
+   
+    height: 170px;
+}
+.certificate img {
+    width: 100%;
+    height: 337px;
+}
+.certificateContent .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 30px;
+}
+.infoSec {
+    width: 100% !important;
+}
+
+}
+@media (max-width: 430px) and (min-width: 160px){
+    .popover-body{
+        display: block !important;
+      
+    }
+    h4 {
+        font-size: 1rem !important;
+    }
+    .activities .col-3{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .activities h4 {
+        top: 24% !important;
+        right: 31%;
+    }
+    .activities .heading2 {
+        top: 74% !important;
+        right: 26% !important;
+    }
+    .activities .div2 h4{
+        top: 48% !important;
+        right: 35% !important;
+    }
+    .activities .div3{
+        margin-bottom: 1.7rem;
+    }
+    .news .col-3{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .slider img {
+        width: 100%;
+        height: 30rem !important;
+    }
+    .carousel-caption {
+      left: 8% !important;
+        width: 80% !important;
+        top: 8rem !important;
+    }
+    .lastProjects .col-3{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .infoSec {
+        font-size: 14px;
+        width: 100% !important;
+    }
+    .infoSec h3 {
+        font-size: 1.25rem;
+    }
+    .projectsContent .col-5,.newsContent .col-5 ,.ExhibitionsContent .col-5 ,.FramsContent .col-5,
+    .PipelinesContent .col-5 ,.plantsContent .col-5 ,.structureContent .col-5 ,.coatingContent .col-5 ,.processContent  .col-5
+    {
+        flex: 0 0 80% !important;
+        max-width: 80% !important;
+    }
+    .card img {
+        height: 180px !important;
+        width: 100%;
+    }
+    .news .col-3 ,.lastProjects .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .lastProjects .card{
+        height: 420px;
+    }
+    .ProjectsDiv .col-8{
+        flex: 0 0 60.666666% !important;
+        max-width: 60.666666% !important;
+    }
+    .ProjectsDiv .col-4 {
+        flex: 0 0 38.333333% !important;
+        max-width: 38.333333% !important;
+    
+    }
+.ProjectsDiv .row{
+    width: 100% !important;
+}    
+.ProjectsDiv  .prolist{
+    margin-top: 30px;
+}
+#contentplants .card, .FramsContent .card, .structureContent .card, .processContent .card, .coatingContent .card {
+    height: 340px !important;
+}
+.proDetails .row {
+    width: 100%;
+    margin: 0 auto;
+}
+.proDetails  .col-6{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+.bs-popover-top{
+    width: 90% !important;
+    left: -200px !important;
+    transform: translate3d(240px, 5px, 0px)!important;
+}
+.logoImage {
+    width: 64px !important;
+}
+.navbar-toggler {
+    padding: 1rem 0.50rem !important;
+    margin-right: 10px !important;
+    font-size:0.50 rem;
+    width: 0em !important;
+    height: 0em !important;
+}
+.contactContain .row {
+    width: 100% !important;
+}
+.iconcard .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.iconcard div.col-4 {
+    width: 80% !important;
+    margin-bottom: 20px auto;
+}
+.footer .logoImg {
+    width: 55%;
+  
+}
+footer .top {
+    top: 90%;
+}
+footer .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+.aboutMain .achieveImgs img, .projectsMain .ProjectImgs img {
+    height: 167px;
+}
+.parenterContent {
+    margin-top: 10%;
+}
+.strategyContent .title::after, .certificateContent .title::after, .parenterContent .title::after {
+    left: 22%;
+}
+
+.aboutDiv .row {
+    width: 100% !important;
+  
+}
+.PipeCoatingContent .row, .exhibtionMain .row {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.servicesDiv .row {
+    width: 100%;
+}
+.WorkshopContent .title::after, .PipeCoatingContent .title::after, .MaintenanceContent .title::after {
+    left: 27%;
+}
+.PipeCoatingContent  .col-4{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.aboutList, .ProjectsList, .servicesList, .exhibtionList {
+    margin-top: 30% !important;
+}
+.aboutMain .achieveImgs, .projectsMain .ProjectImgs {
+    height: 335px;
+}
+.proDetails .row img {
+    height: 240px;
+    margin-top: 0%;
+}
+.Plants img, .FARMS img, .PIPELINES img, .STRUCTURES img, .EQUIPMENT img, .COATING img,
+ .workShopImg img, .pipeCoatImg img, .MaintenanceImg img, .newsImg img, .ExhibitionsImg img {
+    height: 320px;
+}
+.historyContent .col-6 , .proDetails  .col-6{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+.history .row img {
+   
+    height: 170px;
+}
+.certificate img {
+    width: 100%;
+    height: 337px;
+}
+.certificateContent .col-4{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 30px;
+}
+.parenters h3 ,.certificates h3{
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+.logosDiv {
+    width: 90% !important;
+}
+.certificates .carousel-control-next {
+    right: -10% !important;
+}
+.certificates .carousel-inner {
+    width: 90% !important; 
+    margin: 0 auto !important;
+}
+
+.certificates .carousel img {
+    height: 260px !important;
+}
+.slider img {
+width: 100%;
+height: 30rem !important;
+}
+.certificates .carousel-control-prev {
+left: -10% !important;
+}
+.ProjectsDiv .col-4 , .ProjectsDiv .col-8 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+footer .col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.footer .logoImg {
+    width: 127%;
+}
+.footer p {
+    font-size: 14px;
+}
+.listNav .col-6{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+}
+a:hover{
+    cursor: pointer;
+}
+ .card , .card{ 
+    overflow: hidden;
+}
+ .card img , .card img{
+    transition: 1s ease-in-out;
+}
+ .card img:hover , .card img:hover{
+  transform: scale(1.2);
+}
